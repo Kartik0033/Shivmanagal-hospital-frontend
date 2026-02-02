@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Doctors - Shivmangal Hospital</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="doctors.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .doctor-card {
+      background-color: #1e1e2f;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease;
+    }
+
+    .doctor-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .doctor-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .read-more {
+      background-color: #30a9ad;
+      border: none;
+    }
+
+    .modal-content {
+      background-color: #111;
+      color: #fff;
+    }
+
+    h2.section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #30e3ca;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container py-5">
+    <h2 class="section-title">Meet Our Expert Doctors</h2>
+    <div class="row g-4">
+
+      <!-- Doctor Cards -->
+      <!-- 1. Dr. Manoj Dinkar Pawar -->
+      <div class="col-md-6 col-lg-4">
+        <div class="doctor-card p-3">
+          <img src="doctor/doctor1.jpg" class="doctor-img" alt="Dr. Manoj Dinkar Pawar">
+          <h4 class="mt-3">Dr. Manoj Dinkar Pawar</h4>
+          <p><strong>Specialty:</strong> Aesthetic & Plastic Surgeon</p>
+          <p><strong>Experience:</strong> 15+ years</p>
+          <button class="btn btn-sm text-white read-more" data-bs-toggle="modal" data-bs-target="#modalManoj">Read
+            More</button>
+        </div>
+      </div>
+
+      <!-- 2. Dr. Rahul Agarwal -->
+      <div class="col-md-6 col-lg-4">
+        <div class="doctor-card p-3">
+          <img src="doctor/doctor2.jpg" class="doctor-img" alt="Dr. Rahul Agarwal">
+          <h4 class="mt-3">Dr. Rahul Agarwal</h4>
+          <p><strong>Specialty:</strong> Orthopedic & Joint Replacement Surgeon</p>
+          <p><strong>Experience:</strong> 15+ years</p>
+          <button class="btn btn-sm text-white read-more" data-bs-toggle="modal" data-bs-target="#modalRahul">Read
+            More</button>
+        </div>
+      </div>
+
+      <!-- 3. Dr. Sanjay P. Dhangar -->
+      <div class="col-md-6 col-lg-4">
+        <div class="doctor-card p-3">
+          <img src="doctor/doctor3.jpg" class="doctor-img" alt="Dr. Sanjay P. Dhangar">
+          <h4 class="mt-3">Dr. Sanjay P. Dhangar</h4>
+          <p><strong>Specialty:</strong> Urologist, Robotic & Transplant Surgeon</p>
+          <p><strong>Experience:</strong> Senior Consultant</p>
+          <button class="btn btn-sm text-white read-more" data-bs-toggle="modal" data-bs-target="#modalSanjay">Read
+            More</button>
+        </div>
+      </div>
+
+      <!-- 4. Dr. Nirmay Kamble -->
+      <div class="col-md-6 col-lg-4">
+        <div class="doctor-card p-3">
+          <img src="doctor/doctor4.jpg" class="doctor-img" alt="Dr. Nirmay Kamble">
+          <h4 class="mt-3">Dr. Nirmay Kamble</h4>
+          <p><strong>Specialty:</strong> ENT Specialist</p>
+          <p><strong>Experience:</strong> Gold Medalist</p>
+          <button class="btn btn-sm text-white read-more" data-bs-toggle="modal" data-bs-target="#modalNirmay">Read
+            More</button>
+        </div>
+      </div>
+
+      <!-- 5. Dr. Darshan Kishor Gaud -->
+      <div class="col-md-6 col-lg-4">
+        <div class="doctor-card p-3">
+          <img src="doctor/doctor5.jpg" class="doctor-img" alt="Dr. Darshan Kishor Gaud">
+          <h4 class="mt-3">Dr. Darshan Kishor Gaud</h4>
+          <p><strong>Specialty:</strong> Neurosurgeon</p>
+          <p><strong>Experience:</strong> 16+ years</p>
+          <button class="btn btn-sm text-white read-more" data-bs-toggle="modal" data-bs-target="#modalDarshan">Read
+            More</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modals -->
+  <div class="modal fade" id="modalManoj" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content p-4">
+        <div class="modal-header">
+          <h5 class="modal-title">Dr. Manoj Dinkar Pawar</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>MBBS (2007), MS (2013), M.Ch (2018), DNB (2019). Director at Plastic & Hand Surgery Clinic, ex-Professor at
+            BJMC Pune. Expertise: Mole Removal, Botox, Breast Surgery, Lipoma, Hair Transplant. Fluent in Hindi and
+            English.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalRahul" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content p-4">
+        <div class="modal-header">
+          <h5 class="modal-title">Dr. Rahul Agarwal</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>MBBS (2011), DNB Ortho (2015), multiple fellowships in Arthroplasty and Arthroscopy from India and France.
+            Expert in MIS Joint Replacements, Robotic Surgery, Sports Injuries.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalSanjay" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content p-4">
+        <div class="modal-header">
+          <h5 class="modal-title">Dr. Sanjay P. Dhangar</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>MBBS, DNB (Surgery, Urology), MBA, FACS, multiple fellowships in Robotic, Laser, and Transplant Surgery.
+            Specializes in Urology, Oncology, Andrology, Pediatric & Reconstructive Urology.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalNirmay" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content p-4">
+        <div class="modal-header">
+          <h5 class="modal-title">Dr. Nirmay Kamble</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>MBBS, MS ENT (Gold Medalist). Trained at BJMC and LTMGH Mumbai. Expertise in ear, nose, throat disorders,
+            sinusitis, advanced ENT surgeries, and compassionate care.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalDarshan" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content p-4">
+        <div class="modal-header">
+          <h5 class="modal-title">Dr. Darshan Kishor Gaud</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>MBBS (2010), MS (2016), MCh Neurosurgery (2020). 16 years experience in neurosurgery. Practices at super
+            specialty hospitals in Pune. Expert in brain and spinal surgeries.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

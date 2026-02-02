@@ -1,0 +1,387 @@
+    body {
+      margin: 0;
+      padding-top: 80px;
+      /* Space for fixed navbar */
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      padding: 0.5rem 2rem;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+      height: 80px;
+      z-index: 1030;
+    }
+
+    .hospital-logo-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 70px;
+      width: 70px;
+      overflow: hidden;
+    }
+
+    .hospital-logo {
+      height: 60px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .navbar-brand-text {
+      line-height: 1.2;
+    }
+
+    .hospital-name {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 0;
+    }
+
+    .hospital-tagline {
+      font-style: italic;
+      color: #007b8a;
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: #000 !important;
+    }
+
+    .red-tape {
+      background-color: #007f7d;
+      color: white;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      font-weight: 600;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+    }
+
+    .scroll-text {
+      white-space: nowrap;
+      position: absolute;
+      animation: scroll-left 15s linear infinite;
+    }
+
+    .red-tape:hover .scroll-text {
+      animation-play-state: paused;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .c-item {
+      height: 600px;
+    }
+
+    .c-img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(1.2);
+    }
+
+    .section-info {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(135deg, #30a9ad, #819fbc);
+      padding: 30px;
+      margin: 0;
+    }
+
+    .info-wrapper {
+      display: flex;
+      background: linear-gradient(135deg, #30a9ad, #819fbc);
+      border: 1px solid #05aae6;
+      border-radius: 20px;
+      max-width: 1400px;
+      width: 100%;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      padding: 30px;
+      margin: 0;
+    }
+
+    .text-box {
+      flex: 1;
+      background-color: #007f7d;
+      color: white;
+      padding: 40px;
+      border-radius: 80px 0 0 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .text-box h1 {
+      font-size: 36px;
+      margin: 10px 0;
+    }
+
+    .text-box p {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .text-box button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: white;
+      color: #007b8a;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+      width: fit-content;
+    }
+
+    .image-box {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 0 20px 20px 0;
+    }
+
+    @media (max-width: 768px) {
+      .info-wrapper {
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 20px;
+      }
+
+      .text-box {
+        border-radius: 20px 20px 0 0;
+        text-align: center;
+        padding: 30px 20px;
+      }
+
+      .image-box img {
+        border-radius: 0 0 20px 20px;
+      }
+    }
+
+    .floating-btn-container {
+      position: fixed;
+      right: 20px;
+      bottom: 100px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .floating-btn {
+      background-color: #d7e3ec;
+      color: black;
+      font-weight: 500;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      width: 70px;
+      transition: width 0.3s ease, background-color 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .floating-btn:hover {
+      width: 200px;
+    }
+
+    .floating-btn img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+
+    .floating-btn span {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .floating-btn:hover span {
+      opacity: 1;
+    }
+
+    .whatsapp-btn {
+      background-color: #25d366;
+      color: white;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1eb75c;
+    }
+
+    /* Phone Hover in Navbar */
+    .phone-hover .nav-link {
+      border: 1px solid #ccc;
+      border-radius: 50px;
+      padding: 6px 12px;
+      transition: all 0.3s ease;
+      color: #000 !important;
+      overflow: hidden;
+      max-width: 45px;
+    }
+
+    .phone-hover .phone-text {
+      opacity: 0;
+      margin-left: 8px;
+      white-space: nowrap;
+      transition: opacity 0.3s ease;
+    }
+
+    .phone-hover:hover .nav-link {
+      background-color: #24a1a1;
+      color: #fff !important;
+      max-width: 200px;
+    }
+
+    .phone-hover:hover .phone-text {
+      opacity: 1;
+      color: #fff;
+    }
+
+    .phone-hover img {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* 🌈 Section Gradient */
+    #services {
+      background: linear-gradient(135deg, #30a9ad, #819fbc);
+      padding: 60px 0;
+    }
+
+    .service-card {
+      border-radius: 16px;
+      overflow: hidden;
+      height: 100%;
+      background: linear-gradient(135deg, #30a9ad, #819fbc);
+      color: white;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+      flex-shrink: 0;
+    }
+
+    .service-card-content {
+      padding: 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .service-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+      margin-bottom: 0.5rem;
+    }
+
+    .service-description {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .text-white p {
+      color: #f2f2f2;
+    }
+
+    .photo-gallery {
+      background: linear-gradient(135deg, #30a9ad, #819fbc);
+      /* blue to teal */
+      color: white;
+    }
+
+    .photo-gallery h2 {
+      color: #ffffff;
+      z-index: 100;
+    }
+
+    .photo-gallery img {
+      height: 350px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .gallery-text {
+      color: white;
+    }
+
+    .footer {
+      color: white;
+    }
+
+    .footer h5 {
+      font-weight: bold;
+      color: white;
+    }
+
+    #testimonials {
+      background: linear-gradient(135deg, #4fc9c3, #3282b8);
+    }
+
+    #testimonials h2 {
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .testimonial-card {
+      background: #ffffffcc;
+      /* White with light transparency */
+      border: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .testimonial-card h5 {
+      font-weight: 600;
+    }
+
+    .stars {
+      font-size: 1.2rem;
+      letter-spacing: 2px;
+    }

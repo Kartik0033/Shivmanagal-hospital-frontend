@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Demo Gym</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .navbar {
+      background-color: #111 !important;
+    }
+
+    .hero-img {
+      width: 100%;
+      max-height: 90vh;
+      object-fit: cover;
+      opacity: 0.8;
+      position: relative;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -30%);
+      color: #fff;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      transition: 0.3s;
+      box-shadow: 0 0 10px red;
+    }
+
+    .card {
+      background-color: #111;
+    }
+
+    footer {
+      background-color: #111;
+      border-top: 1px solid #444;
+    }
+
+    h2 {
+      color: red;
+    }
+
+    .section {
+      padding: 60px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark px-4">
+    <a class="navbar-brand text-danger fw-bold" href="#">DEMO GYM</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active text-white" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#supplement">Supplement Area</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Image -->
+  <div class="position-relative">
+    <img class="hero-img" src="gym-background.webp" alt="Gym Banner">
+    <div class="hero-text">
+      <h1 class="display-4 fw-bold text-danger">Transform Your Body</h1>
+      <p class="lead">Join Demo Gym Today and Achieve Your Fitness Goals</p>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Services</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card text-white h-100">
+            <img src="https://images.unsplash.com/photo-1584467735871-bd5899bfc733" class="card-img-top" alt="Zumba">
+            <div class="card-body">
+              <h5 class="card-title text-danger">Zumba</h5>
+              <p>Energetic dance fitness classes to boost metabolism and mood.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-white h-100">
+            <img src="https://images.unsplash.com/photo-1613470208960-4ca8e3d73cde" class="card-img-top"
+              alt="Diet Plan">
+            <div class="card-body">
+              <h5 class="card-title text-danger">Diet Plan</h5>
+              <p>Personalized diet charts tailored for your body type and goals.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-white h-100">
+            <img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0642" class="card-img-top"
+              alt="Weight Gain/Loss">
+            <div class="card-body">
+              <h5 class="card-title text-danger">Weight Gain / Loss</h5>
+              <p>Professional programs for healthy weight management.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Supplement Area Section -->
+  <section id="supplement" class="section bg-dark">
+    <div class="container">
+      <h2 class="text-center mb-4">Supplement Area</h2>
+      <div class="row g-4">
+        <!-- Supplement Cards -->
+        <div class="col-md-3">
+          <div class="card text-white h-100">
+            <img src="https://images.unsplash.com/photo-1600486913742-65d5d8d9f7a4" class="card-img-top" alt="Steam">
+            <div class="card-body">
+              <h5 class="card-title text-danger">Steam</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-white h-100">
+            <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74" class="card-img-top" alt="Cardio">
+            <div class="card-body">
+              <h5 class="card-title text-danger">Cardio</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-white h-100">
+            <img src="https://images.unsplash.com/photo-1571019613914-85f342c1d35a" class="card-img-top" alt="PT">
+            <div class="card-body">
+              <h5 class="card-title text-danger">Personal Training</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-white h-100">
+            <img src="https://images.unsplash.com/photo-1579758629936-03608ccdbaba" class="card-img-top"
+              alt="Juice Bar">
+            <div class="card-body">
+              <h5 class="card-title text-danger">Juice Bar</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-white h-100">
+            <img src="https://images.unsplash.com/photo-1596496053955-527f1f1dba5b" class="card-img-top"
+              alt="Competition">
+            <div class="card-body">
+              <h5 class="card-title text-danger">Competitions</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-white h-100">
+            <img src="https://images.unsplash.com/photo-1599058917212-d750089bc43c" class="card-img-top" alt="Swimming">
+            <div class="card-body">
+              <h5 class="card-title text-danger">Swimming</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-white h-100">
+            <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" class="card-img-top"
+              alt="Ladies Batch">
+            <div class="card-body">
+              <h5 class="card-title text-danger">Special Ladies Batch</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-white h-100">
+            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90" class="card-img-top" alt="Yoga">
+            <div class="card-body">
+              <h5 class="card-title text-danger">Yoga</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" placeholder="Your Message" rows="4" required></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button class="btn btn-danger px-5">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-white py-3">
+    &copy; 2025 Demo Gym. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
