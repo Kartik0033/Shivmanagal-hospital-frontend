@@ -6,6 +6,8 @@
 
 **[https://kartik0033.github.io/Shivmanagal-hospital-frontend/](https://kartik0033.github.io/Shivmanagal-hospital-frontend/)**
 
+[![Website Preview](preview.png)](https://kartik0033.github.io/Shivmanagal-hospital-frontend/)
+
 ---
 
 ## 📋 Features
