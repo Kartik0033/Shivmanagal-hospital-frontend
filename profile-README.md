@@ -46,7 +46,7 @@
 [![Live Site](https://img.shields.io/badge/🌐_Live_Site-30A9AD?style=for-the-badge)](https://kartik0033.github.io/Shivmanagal-hospital-frontend/)
 [![Repo](https://img.shields.io/badge/GitHub_Repo-181717?style=for-the-badge&logo=github)](https://github.com/Kartik0033/Shivmanagal-hospital-frontend)
 
-[![Hospital Website Preview](https://kartik0033.github.io/Shivmanagal-hospital-frontend/preview.png)](https://kartik0033.github.io/Shivmanagal-hospital-frontend/)
+[![Hospital Website Preview](https://kartik0033.github.io/Shivmanagal-hospital-frontend/preview.png?v=2)](https://kartik0033.github.io/Shivmanagal-hospital-frontend/)
 
 </div>
 
