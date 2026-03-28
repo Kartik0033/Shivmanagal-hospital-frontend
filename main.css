@@ -3,6 +3,7 @@
       padding-top: 80px;
       /* Space for fixed navbar */
       font-family: Arial, sans-serif;
+      overflow-x: hidden;
     }
 
     .navbar {
@@ -34,14 +35,14 @@
 
     .hospital-name {
       font-weight: bold;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       margin-bottom: 0;
     }
 
     .hospital-tagline {
       font-style: italic;
       color: #007b8a;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       margin-bottom: 0;
     }
 
@@ -85,6 +86,14 @@
 
     .c-item {
       height: 600px;
+    }
+
+    .carousel-headline {
+      font-size: clamp(1.4rem, 5vw, 2.8rem);
+    }
+
+    .carousel-lead {
+      font-size: clamp(0.9rem, 2.5vw, 1.25rem);
     }
 
     .c-img {
@@ -166,14 +175,22 @@
     @media (max-width: 768px) {
       .info-wrapper {
         flex-direction: column;
-        padding: 20px;
+        padding: 15px;
         border-radius: 20px;
       }
 
       .text-box {
         border-radius: 20px 20px 0 0;
         text-align: center;
-        padding: 30px 20px;
+        padding: 25px 15px;
+      }
+
+      .text-box h1 {
+        font-size: 24px;
+      }
+
+      .text-box p {
+        font-size: 16px;
       }
 
       .image-box img {
@@ -338,7 +355,7 @@
     }
 
     .photo-gallery img {
-      height: 350px;
+      height: 220px;
       object-fit: cover;
       border-radius: 12px;
     }
@@ -396,4 +413,138 @@
       padding: 4px 10px;
       border-radius: 20px;
       letter-spacing: 0.5px;
+    }
+
+    /* ========== MOBILE RESPONSIVE BREAKPOINTS ========== */
+
+    @media (max-width: 576px) {
+      /* Navbar */
+      body {
+        padding-top: 70px;
+      }
+
+      .navbar {
+        height: 70px;
+        padding: 0.4rem 1rem;
+      }
+
+      .hospital-logo-wrapper {
+        height: 52px;
+        width: 52px;
+      }
+
+      .hospital-logo {
+        height: 46px;
+      }
+
+      .hospital-name {
+        font-size: 0.78rem;
+      }
+
+      .hospital-tagline {
+        font-size: 0.68rem;
+      }
+
+      /* Hero Carousel */
+      .c-item {
+        height: 280px;
+      }
+
+      /* Announcement Tape */
+      .red-tape {
+        font-size: 0.85rem;
+        height: 44px;
+      }
+
+      /* Info section */
+      .section-info {
+        padding: 15px;
+      }
+
+      /* Gallery images smaller on phones */
+      .photo-gallery img {
+        height: 150px;
+      }
+
+      /* Hide expanding phone numbers on mobile nav (covered by hamburger menu) */
+      .phone-hover .nav-link {
+        max-width: 100% !important;
+        border: none;
+        border-radius: 0;
+      }
+
+      .phone-hover .phone-text {
+        opacity: 1 !important;
+      }
+
+      /* Floating buttons: always show label on mobile (touch has no hover) */
+      .floating-btn {
+        width: auto;
+        padding: 8px 12px;
+      }
+
+      .floating-btn span {
+        opacity: 1;
+        font-size: 0.85rem;
+      }
+
+      .floating-btn-container {
+        bottom: 70px;
+        right: 10px;
+        gap: 10px;
+      }
+
+      /* Services section */
+      #services {
+        padding: 40px 0;
+      }
+
+      .service-title {
+        font-size: 1.2rem;
+      }
+
+      /* Testimonials */
+      #testimonials {
+        padding: 30px 0;
+      }
+
+      /* Footer stacking */
+      .footer .col-md-4 {
+        margin-bottom: 1.5rem;
+      }
+
+      /* Doctor page title */
+      h2.section-title {
+        font-size: 1.8rem;
+      }
+    }
+
+    @media (min-width: 577px) and (max-width: 768px) {
+      /* Tablet adjustments */
+      .c-item {
+        height: 380px;
+      }
+
+      .photo-gallery img {
+        height: 180px;
+      }
+
+      .floating-btn {
+        width: auto;
+        padding: 9px 13px;
+      }
+
+      .floating-btn span {
+        opacity: 1;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 991px) {
+      .c-item {
+        height: 450px;
+      }
+
+      .photo-gallery img {
+        height: 200px;
+      }
     }

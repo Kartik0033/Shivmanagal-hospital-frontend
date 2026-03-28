@@ -49,10 +49,58 @@
       font-weight: bold;
       color: #30e3ca;
     }
+
+    .back-navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1030;
+      background: rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .back-navbar a {
+      color: #30e3ca;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s ease;
+    }
+
+    .back-navbar a:hover {
+      color: #fff;
+    }
+
+    @media (max-width: 576px) {
+      h2.section-title {
+        font-size: 1.6rem;
+        margin-bottom: 24px;
+      }
+
+      .doctor-img {
+        height: 220px;
+      }
+
+      .modal-dialog {
+        margin: 0.5rem;
+      }
+    }
   </style>
 </head>
 
 <body>
+  <nav class="back-navbar">
+    <a href="index.html">
+      &#8592; Back to Home
+    </a>
+  </nav>
   <div class="container py-5">
     <h2 class="section-title">Meet Our Expert Doctors</h2>
     <div class="row g-4">
